@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="customTheme" parent="@android:style/Theme.Dialog"> 
+        <item name="android:textColor">@color/titletextcolor</item>  
+         <item name="android:textStyle">bold</item>
+    </style> 
+</resources>

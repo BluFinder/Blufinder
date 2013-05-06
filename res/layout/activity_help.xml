@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    tools:context=".HELP" >
+    
+	<ScrollView
+	    android:id="@+id/SCROLLER"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/okButton"
+	    android:layout_alignParentTop="true"
+	    android:fillViewport="false"
+	    android:gravity="left"
+	    android:padding="5dp"
+	    android:scrollbars="vertical" >
+
+	    <TableLayout 
+        	android:id="@+id/tl_question"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:shrinkColumns="1">
+            
+	        <TableRow>
+			    <TextView
+				    android:id="@+id/Text1"
+				    android:text="To Start Service\n"
+				    android:textSize="20dp"
+				    android:textStyle="bold"
+				    android:textColor="#3399CC"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+		    </TableRow>
+		    <TableRow>
+			    <TextView
+				    android:id="@+id/Text2"
+				    android:text="Connect to your bluetooth device and press the power button to start service\n\n"
+				    android:textSize="18dp"
+				    android:textColor="#FFFFFF"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+		    </TableRow>
+		    
+		    <TableRow>
+			    <TextView
+				    android:id="@+id/Text3"
+				    android:text="Select How To Get Notified\n"
+				    android:textSize="20dp"
+				    android:textStyle="bold"
+				    android:textColor="#3399CC"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+			</TableRow>
+			
+		    <TableRow>
+			    <TextView
+				    android:id="@+id/Text4"
+				    android:text="Check ringtone or vibrate checkboxes to choose how you want to be notified.\n\n"
+				    android:textSize="18dp"
+				    android:textColor="#FFFFFF"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+		    </TableRow>
+		    
+		    <TableRow>
+			    <TextView
+				    android:id="@+id/Text5"
+				    android:text="Select Customized Ringtone\n"
+				    android:textSize="20dp"
+				    android:textStyle="bold"
+				    android:textColor="#3399CC"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+			</TableRow>
+			
+		    <TableRow>
+			    <TextView
+				    android:id="@+id/Text6"
+				    android:text="Click on &quot;Select&quot; Ringtone to choose a ringtone. This ringtine will be played when Bluetooth device is disconnected\n\n"
+				    android:textSize="18dp"
+				    android:textColor="#FFFFFF"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content" />
+		    </TableRow>
+		    
+		</TableLayout>
+    </ScrollView>
+
+	<Button
+	    android:id="@+id/okButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:padding="10dp"
+	    android:text="OK" 
+	    android:background="#3399CC"/>
+	
+</RelativeLayout>

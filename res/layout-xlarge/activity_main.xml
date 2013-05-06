@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+	
+    <ToggleButton
+        android:id="@+id/serviceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textOn=""
+	    android:textOff=""
+        android:background="@drawable/service_toggle" />
+	    
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/tableLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="top" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20dp"
+		android:layout_below="@+id/serviceButton"
+		android:padding="10dp"
+		android:background="#80000000" >
+		
+	    <TextView
+	        android:id="@+id/notifyText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="50dp"
+	        android:textStyle="bold"
+	        android:textColor="@android:color/white"
+	        android:text="How to notify:" />
+	
+	    <CheckBox
+	        android:id="@+id/ringtoneCheck"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tableLayout1"
+	        android:layout_below="@+id/notifyText"
+	        android:textSize="40dp"
+	        android:textColor="@android:color/white"
+	        android:layout_marginTop="50dp"
+	        android:text="Ringtone" />
+	
+	    <CheckBox
+	        android:id="@+id/vibrateCheck"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/ringtoneCheck"
+	        android:layout_below="@+id/ringtoneCheck"
+	        android:textSize="40dp"
+	        android:textColor="@android:color/white"
+	        android:layout_marginTop="30dp"
+	        android:text="Vibrate" />
+	</TableLayout>
+    
+    <Button
+        android:id="@+id/ringtoneButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/select" />
+    
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ringtoneButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/help" />
+
+</RelativeLayout>
